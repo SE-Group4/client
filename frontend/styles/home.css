@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
 	--hero-background: #d9d9d9;
@@ -234,7 +233,6 @@ body {
 	padding: 0 0 9px 0;
 }
 
-.card .card__header .cards .card__item .show__all .join .form {
 .card .card__header .cards .card__item .show__all .join .form {
 	width: 83px;
 	height: 31px;
