@@ -1,146 +1,146 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 
 :root {
-	--hero-background: #d9d9d9;
-	--primary: #6aa5cc;
-	--secondary: #426780;
-	--tertiary: #a7bdcc;
-	--text-black: #4b4b4b;
-	--surface-color: #f3f3f4;
-	--white-primary: #ffffff;
+    --hero-background: #d9d9d9;
+    --primary: #6aa5cc;
+    --secondary: #426780;
+    --tertiary: #a7bdcc;
+    --text-black: #4b4b4b;
+    --surface-color: #f3f3f4;
+    --white-primary: #ffffff;
 
-	/* typography weights */
-	--font-family: 'Poppins', sans-serif;
-	--font-wght-1: 700;
-	--font-wght-2: 600;
-	--font-wght-3: 500;
-	--font-wght-4: 400;
-	--font-wght-5: 300;
+    /* typography weights */
+    --font-family: "Poppins", sans-serif;
+    --font-wght-1: 700;
+    --font-wght-2: 600;
+    --font-wght-3: 500;
+    --font-wght-4: 400;
+    --font-wght-5: 300;
 
-	/* typography sizes */
-	--font-size-1: 32px;
-	--font-size-2: 24px;
-	--font-size-3: 20px;
-	--font-size-4: 16px;
-	--font-size-5: 14px;
-	--font-capition: 12px;
+    /* typography sizes */
+    --font-size-1: 32px;
+    --font-size-2: 24px;
+    --font-size-3: 20px;
+    --font-size-4: 16px;
+    --font-size-5: 14px;
+    --font-capition: 12px;
 }
 
 .interest__header {
-	min-width: 600;
-	width: 375px;
-	height: 768px;
-	padding: 32px 25px;
-	background: var(--white-primary);
+    min-width: 600;
+    width: 100%;
+    height: 100vh;
+    padding: 32px 25px;
+    background: var(--white-primary);
 }
 
 .back__home {
-	display: flex;
-	align-items: center;
-	width: 32px;
-	height: 32px;
+    display: flex;
+    align-items: center;
+    width: 32px;
+    height: 32px;
 }
 
 .back__home a {
-	color: var(--primary);
-	font-family: var(--font-family);
-	font-weight: var(--font-wght-4);
-	text-decoration: none;
-	font-size: 23px;
+    color: var(--primary);
+    font-family: var(--font-family);
+    font-weight: var(--font-wght-4);
+    text-decoration: none;
+    font-size: 23px;
 }
 
 .title {
-	display: flex;
-	align-items: center;
-	padding: 5px 0;
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
 }
 
 .title h4 {
-	font-size: 32px;
-	color: var(--text-black);
-	font-weight: var(--font-wght-2);
+    font-size: 32px;
+    color: var(--text-black);
+    font-weight: var(--font-wght-2);
 }
 
 .interest__select {
-	width: 100%;
-	display: flex;
-	align-items: center;
-	padding-top: 22px;
-	/* padding-right: 17px; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 22px;
+    /* padding-right: 17px; */
 }
 
 .select__value {
-	width: 100%;
+    width: 100%;
 }
 
 .interest__select form {
-	width: 100%;
-	height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .interests {
-	padding: 0 0 18px 0;
+    padding: 0 0 18px 0;
 }
 
 .interest__select form .options {
-	width: 100%;
-	height: auto;
-	display: flex;
-	align-items: center;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
 
-	justify-content: space-between;
-	padding: 0 0 15px 0;
-	margin-right: 23px;
+    justify-content: space-between;
+    padding: 0 0 15px 0;
+    margin-right: 23px;
 }
 
 .interest__select form .options .option {
-	display: flex;
-	align-items: center;
-	padding: 8px 15px;
-	border: 2px solid var(--primary);
-	cursor: pointer;
-	border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    border: 2px solid var(--primary);
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 .interest__select form .options .option input {
-	width: 17px;
-	height: 17px;
-	border-radius: 2px solid var(--text-black);
-	font-weight: var(--font-wght-2);
-	cursor: pointer;
+    width: 17px;
+    height: 17px;
+    border-radius: 2px solid var(--text-black);
+    font-weight: var(--font-wght-2);
+    cursor: pointer;
 }
 
-.interest__select form .options .option input[type='radio']:checked {
-	color: var(--primary);
-	border-radius: 2px solid var(--primary);
+.interest__select form .options .option input[type="radio"]:checked {
+    color: var(--primary);
+    border-radius: 2px solid var(--primary);
 }
 
 .interest__select form .options .option label {
-	width: 100%;
-	display: flex;
-	align-items: center;
-	color: var(--text-black);
-	padding-left: 10px;
-	font-size: 14px;
-	font-weight: var(--font-wght-4);
-	cursor: pointer;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: var(--text-black);
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: var(--font-wght-4);
+    cursor: pointer;
 }
 
 .interest__select form .submit {
-	width: 100%;
-	padding: 12px 0;
+    width: 100%;
+    padding: 12px 0;
 }
 
 .interest__select form .submit input {
-	width: 100%;
-	background: #6aa5cc;
-	justify-content: space-between;
-	height: 40px;
-	border: none;
-	outline: none;
-	padding: 12px;
-	color: #ffffff;
-	border-radius: 4px;
-	font-weight: 550;
-	cursor: pointer;
+    width: 100%;
+    background: #6aa5cc;
+    justify-content: space-between;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding: 12px;
+    color: #ffffff;
+    border-radius: 4px;
+    font-weight: 550;
+    cursor: pointer;
 }
