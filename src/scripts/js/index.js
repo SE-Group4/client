@@ -6,7 +6,7 @@ const joined = document.querySelectorAll(".form");
 const joinedShow = document.querySelectorAll(".join p");
 const join__form = document.querySelector(".join__form");
 
-const room = document.querySelector(".user__interest");
+const room = document.querySelector(".user__interests");
 
 // show home/profile menu
 toggleMenu.addEventListener("click", (event) => {
@@ -67,3 +67,6 @@ joined.forEach((join) => {
 });
 
 // open chat room
+room.addEventListener("click", () => {
+    window.location.href = "open-chat.html";
+});
