@@ -67,7 +67,7 @@ body {
 	display: flex;
 	align-items: center;
 	width: 100%;
-	padding: 32px 25px 0 25px;
+	padding: 32px 27px 0 27px;
 }
 
 .header .toggle {
@@ -107,7 +107,7 @@ body {
 .interests {
 	width: 100%;
 	margin: 35px 0 0 0;
-	padding: 0 25px 0 25px;
+	padding: 0 2p7x 0 27px;
 }
 
 .interests .photography .title {
@@ -127,7 +127,7 @@ body {
 	display: flex;
 	overflow-x: auto;
 	margin: 0;
-	padding: 15px 25px 0 25px;
+	padding: 15px 27px 0 27spx;
 	justify-content: space-between;
 }
 
