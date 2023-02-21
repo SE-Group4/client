@@ -43,6 +43,7 @@ body {
 
 .container {
 	min-width: 600;
+	min-height: 900;
 	height: auto;
 	display: flex;
 	align-items: center;
@@ -51,8 +52,9 @@ body {
 
 .card {
 	/* margin: 25px; */
+	min-height: 900;
 	min-width: 600;
-	height: 812px;
+	height: 100%;
 }
 
 .card__header {
