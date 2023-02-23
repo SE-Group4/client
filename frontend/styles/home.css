@@ -87,6 +87,7 @@ body {
 	background: var(--surface-color);
 	padding: 0 0 0 12px;
 	border-radius: 4px;
+	margin-right: 10px;
 }
 
 .header .search i {
