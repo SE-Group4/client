@@ -27,13 +27,16 @@
 }
 
 body {
-	min-height: 900;
-	height: 100%;
+	background: var(--hero-background);
+	font-family: var(--font-family);
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 .container {
 	min-width: 600;
-	min-height: 900;
+	min-height: 860;
 	height: 100%;
 	display: flex;
 	align-items: center;
@@ -41,7 +44,7 @@ body {
 }
 
 .card {
-	min-height: 900;
+	min-height: 860;
 	min-width: 600;
 	height: 100%;
 }
@@ -55,6 +58,7 @@ body {
 .card__header .card-header {
 	display: flex;
 	align-items: center;
+	position: fixed;
 	width: 100%;
 	height: 64px;
 	padding: 9px 0 12px 15px;
@@ -107,12 +111,21 @@ body {
 }
 
 .card__body {
-	padding: 32px 0 0 0;
+	padding: 45px 0 0 0;
 }
 
 .card__body .chat {
 	width: 100%;
 	height: 100%;
+	padding: 45px 0 0 0;
+}
+
+.card__body .chat .chat__body {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-height: 600px;
+	overflow-y: auto;
 }
 
 .card__body .chat .chat__date {
@@ -132,7 +145,6 @@ body {
 
 .card__body .chat .message .chat__message {
 	display: flex;
-	align-items: center;
 	padding: 15px 0;
 	width: 100%;
 	height: 100%;
@@ -160,13 +172,19 @@ body {
 	margin-left: 5px;
 }
 
-.card__body .chat .message .chat__message .sender__image img {
+.card__body .chat .message .chat__message .sender__image .sender__profile {
 	width: 27px;
 	height: 27px;
+	background: url('../images/profile-2.jpeg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
 	display: flex;
 	align-items: center;
 	border-radius: 50%;
-	float: bottom;
+	position: relative;
+	bottom: 0;
+	left: 0;
 }
 
 .chat__message__body p {
@@ -196,8 +214,9 @@ body {
 
 .card .card__header .chat__footer {
 	width: 100%;
-	height: 100%;
+	height: 80px;
 	padding: 27px 0 26px 0;
+	z-index: 99;
 }
 
 .card .card__header .chat__footer form {
