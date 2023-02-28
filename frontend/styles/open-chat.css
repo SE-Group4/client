@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;&display=swap');
+
+:root {
+	--hero-background: #d9d9d9;
+	--primary: #6aa5cc;
+	--secondary: #426780;
+	--tertiary: #a7bdcc;
+	--text-black: #4b4b4b;
+	--surface-color: #f3f3f4;
+	--white-primary: #ffffff;
+
+	/* typography weights */
+	--font-family: 'Poppins', sans-serif;
+	--font-wght-1: 700;
+	--font-wght-2: 600;
+	--font-wght-3: 500;
+	--font-wght-4: 400;
+	--font-wght-5: 300;
+
+	/* typography sizes */
+	--font-size-1: 32px;
+	--font-size-2: 24px;
+	--font-size-3: 20px;
+	--font-size-4: 16px;
+	--font-size-5: 14px;
+	--font-capition: 12px;
+}
+
+body {
+	background: var(--hero-background);
+	font-family: var(--font-family);
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+	min-width: 600;
+	min-height: 860;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.card {
+	min-height: 860;
+	min-width: 600;
+	height: 100%;
+}
+
+.card__header {
+	width: 100%;
+	height: 100%;
+	background: var(--white-primary);
+}
+
+.card__header .card-header {
+	display: flex;
+	align-items: center;
+	position: fixed;
+	width: 100%;
+	height: 64px;
+	padding: 9px 0 12px 15px;
+	color: var(--text-black);
+	background: #ffffff;
+	box-shadow: 0px 2px 8px rgba(42, 42, 42, 0.2);
+	z-index: 99;
+}
+
+.go__back {
+	display: flex;
+	align-items: center;
+}
+
+.go__back i {
+	font-size: 19px;
+	font-weight: bolder;
+	padding: 0 13px 0 0;
+}
+
+.group__profile {
+	display: flex;
+	align-items: center;
+	/* padding: 0 0 0 12px; */
+}
+
+.group__profile img {
+	width: 49px;
+	height: 49px;
+	border-radius: 50%;
+}
+
+.group__profile .title__header {
+	display: flex;
+	flex-direction: column;
+	padding: 0 0 0 9px;
+}
+
+.group__profile .title__header h2 {
+	color: var(--text-black);
+	font-size: 16px;
+	font-weight: var(--font-wght-3);
+}
+
+.group__profile .title__header p {
+	padding: 1px 0 0 0;
+	color: #909090;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.card__body {
+	padding: 45px 0 0 0;
+}
+
+.card__body .chat {
+	width: 100%;
+	height: 100%;
+	padding: 45px 0 0 0;
+}
+
+.card__body .chat .chat__body {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-height: 600px;
+	overflow-y: auto;
+}
+
+.card__body .chat .chat__date {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: var(--text-black);
+	font-size: 13px;
+	font-weight: var(--font-wght-2);
+}
+
+.card__body .chat .message {
+	width: 100%;
+	height: 100%;
+}
+
+.card__body .chat .message .chat__message {
+	display: flex;
+	padding: 15px 0;
+	width: 100%;
+	height: 100%;
+	color: var(--text-black);
+}
+
+.card__body .chat .right .chat__message .message__body {
+	width: 229px;
+	height: 100%;
+	border-radius: 10px;
+	margin-left: 40%;
+	margin-right: 13px;
+	background: #ecf3f8;
+}
+
+.card__body .chat .left .chat__message {
+	padding-left: 8px;
+}
+
+.card__body .chat .left .chat__message .message__body {
+	width: 229px;
+	height: 100%;
+	background: #f4f4f4;
+	border-radius: 10px;
+	margin-left: 5px;
+}
+
+.card__body .chat .message .chat__message .sender__image .sender__profile {
+	width: 27px;
+	height: 27px;
+	background: url('../images/profile-2.jpeg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+	border-radius: 50%;
+	position: relative;
+	bottom: 0;
+	left: 0;
+}
+
+.chat__message__body p {
+	color: var(--text-black);
+	font-size: 15.5px;
+	font-weight: var(--font-wght-4);
+}
+
+.card__body .chat .chat__message .message__body {
+	padding: 3px 13px;
+}
+
+.card__body .chat .chat__message .message__body .username {
+	font-size: 14px;
+	font-weight: var(--font-wght-2);
+	color: #426780;
+}
+
+.card .chat .chat__message .message__body time {
+	color: #426780;
+	font-size: 12px;
+	font-weight: var(--font-wght-2);
+	display: flex;
+	align-items: center;
+	float: right;
+}
+
+.card .card__header .chat__footer {
+	width: 100%;
+	height: 80px;
+	padding: 27px 0 26px 0;
+	z-index: 99;
+}
+
+.card .card__header .chat__footer form {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding: 0 0 0 13px;
+}
+
+.card .card__header .chat__footer form .input__message {
+	width: 100%;
+	height: 40px;
+	border-radius: 8px;
+	display: flex;
+	align-items: center;
+	background: #f6f6f6;
+	color: var(--text-black);
+	font-size: 15px;
+	font-weight: var(--font-wght-4);
+	margin: 0 13px 0 12px;
+	padding: 0 13px;
+}
+
+.card .card__header .chat__footer form i {
+	color: #426780;
+}
+
+.card .card__header .chat__footer form input {
+	border: none;
+	background: transparent;
+	height: 100%;
+	width: 100%;
+	outline: none;
+	color: var(--text-black);
+	font-size: 15px;
+}
