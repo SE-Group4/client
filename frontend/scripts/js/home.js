@@ -3,7 +3,6 @@ const toggleMenu = document.querySelector('.fa-bars');
 const menu = document.querySelector('.menu__user');
 const inputSearch = document.querySelector('form');
 const joined = document.querySelectorAll('.join form');
-console.log(joined);
 const joinedShow = document.querySelector('.join__paragraph');
 const join__form = document.querySelector('.join__form');
 
@@ -13,16 +12,16 @@ toggleMenu.addEventListener('click', (event) => {
 });
 
 // reading file
-// fetch('/frontend/data/chatRooms.json')
-// 	.then((response) => response.json())
-// 	.then((contents) => {
-// 		// Do something with the contents of the file
-// 		console.log(contents);
-// 	})
-// 	.catch((error) => {
-// 		// Handle errors
-// 		console.error('Error loading file: ' + error);
-// 	});
+fetch('/frontend/data/chatRooms.json')
+	.then((response) => response.json())
+	.then((contents) => {
+		// Do something with the contents of the file
+		console.log(contents);
+	})
+	.catch((error) => {
+		// Handle errors
+		console.error('Error loading file: ' + error);
+	});
 
 // search for study rooms
 // inputSearch.addEventListener('submit', (event) => {
