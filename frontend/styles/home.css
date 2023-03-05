@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
 	--hero-background: #d9d9d9;
@@ -76,6 +77,8 @@ body {
 .header .toggle {
 	width: 32px;
 	height: 32px;
+	width: 32px;
+	height: 32px;
 	color: var(--primary);
 	font-weight: var(--font-wght-4);
 	/* cursor: pointer; */
@@ -103,9 +106,15 @@ body {
 	align-items: center;
 }
 
+.header .search form {
+	display: flex;
+	align-items: center;
+}
+
 .header .search i {
 	color: var(--tertiary);
 	font-size: 14px;
+	cursor: pointer;
 	cursor: pointer;
 }
 
@@ -204,6 +213,8 @@ body {
 .card .card__header .cards .card__item .interest__header .desc p {
 	width: 100%;
 	height: 100%;
+	width: 100%;
+	height: 100%;
 	padding: 0 0 9px 0;
 	font-size: 13.2px;
 	font-weight: var(--font-wght-3);
@@ -224,13 +235,28 @@ body {
 }
 
 .card .card__header .cards .card__item .show__all .join .form {
+.card .card__header .cards .card__item .show__all .join .form {
 	width: 83px;
 	height: 31px;
 	background: #ffffff;
 	color: var(--text-black);
+	color: var(--text-black);
 	border-radius: 4px;
 	cursor: pointer;
 	color: #2a2a2a;
+	visibility: visible;
+	margin: 15px 0 0 0;
+	border: none;
+	outline: none;
+}
+
+.card .card__header .cards .card__item .show__all .join .form h3 {
+	color: var(--text-black);
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 17px;
 	visibility: visible;
 	margin: 15px 0 0 0;
 	border: none;
@@ -281,6 +307,7 @@ body {
 	font-weight: var(--font-wght-2);
 	padding: 0 5px 0 0;
 	cursor: pointer;
+	margin-bottom: 5px;
 	margin-bottom: 5px;
 }
 
