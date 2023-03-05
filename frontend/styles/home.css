@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
 	--hero-background: #d9d9d9;
@@ -74,10 +74,15 @@ body {
 }
 
 .header .toggle {
-	width: 29px;
-	height: 29px;
+	width: 32px;
+	height: 32px;
 	color: var(--primary);
 	font-weight: var(--font-wght-4);
+	cursor: pointer;
+}
+
+.header .toggle i {
+	cursor: pointer;
 }
 
 .header .search {
@@ -91,9 +96,15 @@ body {
 	/* margin-right: 19px; */
 }
 
+.header .search form {
+	display: flex;
+	align-items: center;
+}
+
 .header .search i {
 	color: var(--tertiary);
 	font-size: 14px;
+	cursor: pointer;
 }
 
 .header .search input {
@@ -187,9 +198,11 @@ body {
 }
 
 .card .card__header .cards .card__item .interest__header .desc p {
+	width: 100%;
+	height: 100%;
 	padding: 0 0 9px 0;
-	font-size: 13.7px;
-	font-weight: var(--font-wght-4);
+	font-size: 13px;
+	font-weight: var(--font-wght-3);
 	color: #2a2a2a;
 }
 
@@ -205,16 +218,31 @@ body {
 	width: 100%;
 }
 
-.card .card__header .cards .card__item .show__all .join input {
-	border: none;
-	outline: none;
+.card .card__header .cards .card__item .show__all .join .form {
 	width: 83px;
 	height: 31px;
 	background: #ffffff;
+	color: var(--text-black);
 	border-radius: 4px;
 	cursor: pointer;
 	color: #2a2a2a;
+	visibility: visible;
+	margin: 15px 0 0 0;
+	border: none;
+	outline: none;
+}
+
+.card .card__header .cards .card__item .show__all .join .form h3 {
+	color: var(--text-black);
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 17px;
 	font-weight: 500;
+}
+
+.join__input__show {
 	visibility: hidden;
 }
 
@@ -247,6 +275,7 @@ body {
 	font-weight: var(--font-wght-2);
 	padding: 0 5px 0 0;
 	cursor: pointer;
+	margin-bottom: 5px;
 }
 
 .card .card__header .cards .card__item .show__all .profile__image .child img {
@@ -272,10 +301,15 @@ body {
 
 .card .card__header .cards .card__item .show__all .join p {
 	position: relative;
-	bottom: 18px;
+	bottom: 24px;
 	left: 13px;
 	color: #2a2a2a;
 	font-size: 15px;
+	visibility: hidden;
+}
+
+.show__p {
+	visibility: visible;
 }
 
 /* === user profile menu === */
