@@ -4,6 +4,8 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- === favicon === -->
+		<link rel="icon" type="image/png" href="../images/logo.png"/>
 		<!-- === main css === -->
 		<link rel="stylesheet" href="../styles/main.css" />
 		<!-- === interests css === -->
@@ -14,6 +16,8 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
 		/>
+		<!-- === home javascript === -->
+		<script src="../scripts/js/home.js" defer></script>
 		<title>Home | StudyBuddy</title>
 	</head>
 	<body>
@@ -26,12 +30,16 @@
 								<i class="fa-solid fa-bars"></i>
 							</div>
 							<div class="search">
-								<i class="fa-solid fa-search"></i>
-								<input
-									type="text"
-									name="search"
-									placeholder="Search"
-								/>
+								<form action="" method="post">
+									<i class="fa-solid fa-search"></i>
+									<input
+										type="text"
+										name="search"
+										id=""
+										placeholder="Search"
+										class="input__search"
+									/>
+								</form>
 							</div>
 						</div>
 						<!-- begin interest-1 -->
@@ -52,7 +60,7 @@
 											<h3>Photography Fanatics</h3>
 											<p>
 												If you can see it,you can shoot
-												it.
+												it...
 											</p>
 										</div>
 									</div>
@@ -81,7 +89,9 @@
 											</div>
 										</div>
 										<div class="join">
-											<input type="button" value="Join" />
+											<div class="form">
+												<h3>Join</h3>
+											</div>
 											<p>Joined</p>
 										</div>
 									</div>
@@ -93,10 +103,9 @@
 											alt=""
 										/>
 										<div class="desc">
-											<h3>Photography Fanatics</h3>
+											<h3>The Dark Room</h3>
 											<p>
-												If you can see it,you can shoot
-												it.
+												Home of the photography enthusiats
 											</p>
 										</div>
 									</div>
@@ -121,11 +130,13 @@
 												/>
 											</div>
 											<div class="child">
-												<p>+37</p>
+												<p>+29</p>
 											</div>
 										</div>
 										<div class="join">
-											<input type="button" value="Join" />
+											<div class="form">
+												<h3>Join</h3>
+											</div>
 											<p>Joined</p>
 										</div>
 									</div>
@@ -137,10 +148,9 @@
 											alt=""
 										/>
 										<div class="desc">
-											<h3>Photography Fanatics</h3>
+											<h3>Camera Stop</h3>
 											<p>
-												If you can see it,you can shoot
-												it.
+												Everything photography.
 											</p>
 										</div>
 									</div>
@@ -165,11 +175,13 @@
 												/>
 											</div>
 											<div class="child">
-												<p>+37</p>
+												<p>+16</p>
 											</div>
 										</div>
 										<div class="join">
-											<input type="button" value="Join" />
+											<div class="form">
+												<h3>Join</h3>
+											</div>
 											<p>Joined</p>
 										</div>
 									</div>
@@ -191,10 +203,54 @@
 											alt=""
 										/>
 										<div class="desc">
-											<h3>Photography Fanatics</h3>
+											<h3>Designers UCC</h3>
 											<p>
-												If you can see it,you can shoot
-												it.
+												We're here to share insights.
+											</p>
+										</div>
+									</div>
+									<div class="show__all">
+										<div class="profile__images">
+											<div>
+												<img
+													src="../images/profile-1.jpeg"
+													alt=""
+												/>
+											</div>
+											<div class="child">
+												<img
+													src="../images/profile-2.jpeg"
+													alt=""
+												/>
+											</div>
+											<div class="child">
+												<img
+													src="../images/profile-3.jpeg"
+													alt=""
+												/>
+											</div>
+											<div class="child">
+												<p>+99</p>
+											</div>
+										</div>
+										<div class="join">
+											<div class="form">
+												<h3>Join</h3>
+											</div>
+											<p>Joined</p>
+										</div>
+									</div>
+								</div>
+								<div class="card__item">
+									<div class="interest__header">
+										<img
+											src="../images/ellipse 28.jpeg"
+											alt=""
+										/>
+										<div class="desc">
+											<h3>Photoshop Legends</h3>
+											<p>
+												Good, better, best. Never let it rest
 											</p>
 										</div>
 									</div>
@@ -223,7 +279,9 @@
 											</div>
 										</div>
 										<div class="join">
-											<input type="button" value="Join" />
+											<div class="form">
+												<h3>Join</h3>
+											</div>
 											<p>Joined</p>
 										</div>
 									</div>
@@ -267,51 +325,9 @@
 											</div>
 										</div>
 										<div class="join">
-											<input type="button" value="Join" />
-											<p>Joined</p>
-										</div>
-									</div>
-								</div>
-								<div class="card__item">
-									<div class="interest__header">
-										<img
-											src="../images/ellipse 28.jpeg"
-											alt=""
-										/>
-										<div class="desc">
-											<h3>Photography Fanatics</h3>
-											<p>
-												If you can see it,you can shoot
-												it.
-											</p>
-										</div>
-									</div>
-									<div class="show__all">
-										<div class="profile__images">
-											<div>
-												<img
-													src="../images/profile-1.jpeg"
-													alt=""
-												/>
+											<div class="form">
+												<h3>Join</h3>
 											</div>
-											<div class="child">
-												<img
-													src="../images/profile-2.jpeg"
-													alt=""
-												/>
-											</div>
-											<div class="child">
-												<img
-													src="../images/profile-3.jpeg"
-													alt=""
-												/>
-											</div>
-											<div class="child">
-												<p>+37</p>
-											</div>
-										</div>
-										<div class="join">
-											<input type="button" value="Join" />
 											<p>Joined</p>
 										</div>
 									</div>
@@ -365,7 +381,9 @@
 											</div>
 										</div>
 										<div class="join">
-											<input type="button" value="Join" />
+											<div class="form">
+												<h3>Join</h3>
+											</div>
 											<p>Joined</p>
 										</div>
 									</div>
@@ -409,7 +427,9 @@
 											</div>
 										</div>
 										<div class="join">
-											<input type="button" value="Join" />
+											<div class="form">
+												<h3>Join</h3>
+											</div>
 											<p>Joined</p>
 										</div>
 									</div>
@@ -453,7 +473,9 @@
 											</div>
 										</div>
 										<div class="join">
-											<input type="button" value="Join" />
+											<div class="form">
+												<h3>Join</h3>
+											</div>
 											<p>Joined</p>
 										</div>
 									</div>

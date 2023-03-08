@@ -4,8 +4,10 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- === favicon === -->
+		<link rel="icon" type="image/png" href="../images/logo.png"/>
 		<!-- === main css === -->
-		<link rel="stylesheet" href="../styles/main.css" />
+		<link rel="stylesheet" href="../styles/home.css" />
 		<!-- === signup css styles === -->
 		<link rel="stylesheet" href="../styles/signup.css" />
 
@@ -14,6 +16,8 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
 		/>
+		<!-- === signup js === -->
+		<script src="../scripts/js/signup.js" defer></script>
 		<title>Sign Up | StudyBuddy</title>
 	</head>
 	<body>
@@ -53,37 +57,37 @@
 								<div class="user__name">
 									<div class="first__name">
 										<p>First Name</p>
-										<input type="text" name="first name" />
+										<input type="text" name="first__name" id="first__name" required/>
 									</div>
 									<div class="last__name">
 										<p>Last Name</p>
-										<input type="text" name="last name" />
+										<input type="text" name="last__name" id="last__name" required/>
 									</div>
 								</div>
 								<div class="user__email">
 									<p>Email</p>
-									<input type="email" name="email" id="" />
+									<input type="email" name="email" id="email" required/>
 								</div>
 								<div class="password">
 									<p>Password</p>
 									<input
 										type="password"
 										name="password"
-										id=""
-									/>
+										id="password"
+									required/>
 									<i class="fa-solid fa-eye"></i>
 								</div>
 								<div class="confirm__password">
 									<p>Confirm Password</p>
 									<input
 										type="password"
-										name="confirm password"
-										id=""
-									/>
+										name="confirm__password"
+										id="confirm__password"
+									required/>
 									<i class="fa-solid fa-eye"></i>
 								</div>
 								<div class="continue">
-									<input type="submit" value="Continue" />
+									<input type="submit" value="Continue" id="submit" />
 								</div>
 								<div class="signin__redirect">
 									<p>

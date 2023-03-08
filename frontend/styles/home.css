@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
 	--hero-background: #d9d9d9;
@@ -74,10 +74,19 @@ body {
 }
 
 .header .toggle {
-	width: 29px;
-	height: 29px;
+	width: 32px;
+	height: 32px;
+	width: 32px;
+	height: 32px;
 	color: var(--primary);
 	font-weight: var(--font-wght-4);
+	/* cursor: pointer; */
+}
+
+.header .toggle i {
+	padding: 5px 0 0 0;
+	cursor: pointer;
+	font-size: 21px;
 }
 
 .header .search {
@@ -91,9 +100,21 @@ body {
 	/* margin-right: 19px; */
 }
 
+.header .search form {
+	display: flex;
+	align-items: center;
+}
+
+.header .search form {
+	display: flex;
+	align-items: center;
+}
+
 .header .search i {
 	color: var(--tertiary);
 	font-size: 14px;
+	cursor: pointer;
+	cursor: pointer;
 }
 
 .header .search input {
@@ -147,10 +168,12 @@ body {
 
 .card .card__header .cards .card__item {
 	min-width: 318px;
-	height: 179px;
-	margin: 0 28px 20px 0;
-	background: #f0f0f0;
-	box-shadow: 0px 2px 8px rgba(42, 42, 42, 0.2);
+	width: 100%;
+	min-height: 165px;
+	height: 100%;
+	margin: 0 28px 0 0;
+	background: #f2f2f2;
+	box-shadow: 0px 2px 8px rgba(42, 42, 42, 0.3);
 	border-radius: 8px;
 }
 
@@ -176,7 +199,7 @@ body {
 .card .card__header .cards .card__item .interest__header .desc {
 	display: block;
 	align-items: center;
-	padding: 17px 0 0 7px;
+	padding: 15px 0 0 7px;
 }
 
 .card .card__header .cards .card__item .interest__header .desc h3 {
@@ -187,9 +210,13 @@ body {
 }
 
 .card .card__header .cards .card__item .interest__header .desc p {
+	width: 100%;
+	height: 100%;
+	width: 100%;
+	height: 100%;
 	padding: 0 0 9px 0;
-	font-size: 13.7px;
-	font-weight: var(--font-wght-4);
+	font-size: 13.2px;
+	font-weight: var(--font-wght-3);
 	color: #2a2a2a;
 }
 
@@ -198,23 +225,54 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 19px 10px;
+	padding: 32px 10px 0 10px;
 }
 
-.card .card__header .cards .card__item .show__all .profile__image {
+.card .card__header .cards .card__item .show__all .profile__images {
 	width: 100%;
+	padding: 0 0 9px 0;
 }
 
-.card .card__header .cards .card__item .show__all .join input {
-	border: none;
-	outline: none;
+.card .card__header .cards .card__item .show__all .join .form {
 	width: 83px;
 	height: 31px;
 	background: #ffffff;
+	color: var(--text-black);
+	color: var(--text-black);
 	border-radius: 4px;
 	cursor: pointer;
 	color: #2a2a2a;
+	visibility: visible;
+	margin: 15px 0 0 0;
+	border: none;
+	outline: none;
+}
+
+.card .card__header .cards .card__item .show__all .join .form h3 {
+	color: var(--text-black);
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 17px;
+	visibility: visible;
+	margin: 15px 0 0 0;
+	border: none;
+	outline: none;
+}
+
+.card .card__header .cards .card__item .show__all .join .form h3 {
+	color: var(--text-black);
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 17px;
 	font-weight: 500;
+	padding: 1px;
+}
+
+.join__input__show {
 	visibility: hidden;
 }
 
@@ -247,6 +305,8 @@ body {
 	font-weight: var(--font-wght-2);
 	padding: 0 5px 0 0;
 	cursor: pointer;
+	margin-bottom: 5px;
+	margin-bottom: 5px;
 }
 
 .card .card__header .cards .card__item .show__all .profile__image .child img {
@@ -272,10 +332,15 @@ body {
 
 .card .card__header .cards .card__item .show__all .join p {
 	position: relative;
-	bottom: 18px;
+	bottom: 29px;
 	left: 13px;
 	color: #2a2a2a;
-	font-size: 15px;
+	font-size: 15.7px;
+	visibility: hidden;
+}
+
+.show__p {
+	visibility: visible;
 }
 
 /* === user profile menu === */
