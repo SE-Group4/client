@@ -1,19 +1,36 @@
 body{
     width: 100%;
-    display: flex;
-    justify-content: center;
+    margin: 0 auto;
+    height: 100%;
 }
-form{
-    min-width: 600;
+
+.resetform{
+    min-width: 600px;
     display: flex;
     flex-direction: column;
     width: 100%;
+    flex: 1;
 }
 
 .image{
-width: 100px;
-height: 100px;
-margin: 0 auto 0 auto;
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+margin-top: 16px;
+}
+
+.formcontent{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.innerform{
+    display: flex;
+    flex-direction: column;
+    width: 311px;
 }
 
 .lockimage{
@@ -22,11 +39,8 @@ margin: 0 auto 0 auto;
 }
 
 h1{
-/* Reset Password. */
 width: 264px;
 height: 48px;
-left: 32px;
-top: 280px;
 
 font-family: 'Poppins', sans-serif;
 font-style: normal;
@@ -38,7 +52,8 @@ margin-bottom:8px;
 color: #2A2A2A;
 }
 
-p{
+
+.subtext{
 width: 230px;
 height: 21px;
 left: 32px;
@@ -69,50 +84,35 @@ line-height: 21px;
 color: #2A2A2A;
 }
 
-.container{
-    position: relative;
-}
-
 .normalbutton{
-width: 311px;
-height: 40px;
-
-background: #6AA5CC;
-border-radius: 4px;
-border-style:none;
-
-font-family: 'Poppins', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 21px;
-color: #FFFFFF;
-}
-
-
+    width: 311px;
+    height: 40px;
+    
+    background: #6AA5CC;
+    border-radius: 4px;
+    border-style:none;
+    
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFFFFF;
+    }
+    
+    
 .regularinput{
-width: 311px;
-height: 40px;
-
-background: #F3F3F4;
-border-radius: 4px;
-border-style:none;
-margin-bottom:24px;
-margin-top:8px;
+    width: 311px;
+    height: 40px;
+    
+    background: #F3F3F4;
+    border-radius: 4px;
+    border-style:none;
+    margin-bottom:24px;
+    margin-top:8px;
 }
 
-#timeinput1{
-width: 144px;
-height: 40px;
-
-background: #F3F3F4;
-border-radius: 4px;
-border-style:none;
-margin-bottom:24px;
-margin-top:8px;
-}
-
-#timeinput2{
+.timeinput{
     width: 144px;
     height: 40px;
     
@@ -121,20 +121,165 @@ margin-top:8px;
     border-style:none;
     margin-bottom:24px;
     margin-top:8px;
-    position: absolute;
-    left: 166px;
-    bottom: 228px;
-  }
+    }
 
-#stop{
-    position: absolute;
-    left: 166px;
-    bottom: 300px;
+.task-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex: 1;
 }
-.closeicon{
-    position: relative;
-    left: 0;
+
+.innertask{
+    margin-top: 48px;
+}
+
+.popup-header{
+    width: 314px;
+}
+
+.closelink{
     width: 24px;
     height: 24px;
+    align-self: start;
+    margin-top: 16px;
 }
 
+.task-form{
+    width: 314px;
+}
+
+.start-stop{
+    display: flex;
+    width: 314px;
+    align-items: center;
+}
+
+#stop{
+    margin-left: 16px;
+}
+
+#timeinput2{
+    margin-left: 16px;
+}
+
+.navbar{
+    height: 64px;
+    width: 100%;
+    position: fixed;
+    background-color: #FFFFFF;
+    top: 0;
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.nav-container{
+    align-items: center;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex: 1;
+}
+
+
+.list-container{
+    margin-top: 96px;
+    display: flex;
+    justify-content: center;
+}
+
+.list-container-inner{
+    display: flex;
+    flex-direction: column;
+}
+
+.backicon{
+    height: 24px;
+    margin-left: 16px;
+    width: 24px;
+}
+
+.filesheader{
+    font-size: 24px;
+    height: 36px;
+    margin-top: 0;
+    margin-left: 121px;
+    width: 71.95px;
+}
+
+.filelist-container{
+    list-style-type:none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.date{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 48px;
+    margin-bottom:8px;
+
+    color: #2A2A2A;
+}
+
+.file-card{
+    width: 311px;
+    height:81px;
+    background-color: #f6f6f6;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 8px;
+}
+
+.innercard{
+    display: flex;
+    flex-direction: column;
+    height: 65px;
+}
+.fileimage{
+    width: 65px;
+    height: 65px;
+    margin-right: 6px;
+    margin-left: 8px;
+}
+
+.filelink:active{
+    text-decoration: none;
+    color: #2A2A2A;
+}
+
+.filelink:visited{
+    text-decoration: none;
+    color: #2A2A2A;
+}
+
+.filelink:link{
+    text-decoration: none;
+    color: #2A2A2A;
+}
+
+.filename{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #2A2A2A; 
+    margin-top: 0;
+}
+
+.filesize{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #2A2A2A;
+    margin-top: 0;
+}
