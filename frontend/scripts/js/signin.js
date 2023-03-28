@@ -1,7 +1,10 @@
-const signinForm = document.querySelector('.card form');
+document.addEventListener("DOMContentLoaded", () => {
+  const signInForm = document.querySelector("#login");
+  const signUpForm = document.querySelector("signup");
 
-form.addEventListener('submit', (event) => {
+  signInForm.addEventListener("click", (event) => {
     event.preventDefault();
-    const formData = Object.fromEntries(new FormData(event.target).entries());
-    console.log(fromData);
-})
+    signInForm.classList.remove("form--hidden");
+    signUpForm.classList.add("form--hidden");
+  });
+});
