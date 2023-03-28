@@ -8,6 +8,7 @@ composeMessage.addEventListener("submit", (event) => {
         new FormData(event.target).entries()
     );
     console.log(composeData);
+    // append sent message to the sent message div
     composeMessage.reset();
     return false;
 });

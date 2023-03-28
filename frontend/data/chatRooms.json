@@ -1,0 +1,30 @@
+[
+	{
+		"id": 1,
+		"roomName": "PhotoGraphy Fanatics",
+		"description": "If you can see it, you can shhot it",
+		"number_of_members": 37,
+		"users": [
+			{
+				"id": "1",
+				"name": "Wade Wilson"
+			},
+			{
+				"id": "2",
+				"name": "Angela Yu"
+			}
+		]
+	},
+	{
+		"id": 2,
+		"roomName": "Discrete Mathematics",
+		"description": "If you can see it, you can shhot it",
+		"number_of_members": 37
+	},
+	{
+		"id": 2,
+		"roomName": "Data Structures",
+		"description": "If you can see it, you can shhot it",
+		"number_of_members": 37
+	}
+]
