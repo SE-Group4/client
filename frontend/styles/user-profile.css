@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+:root {
+    --hero-background: #d9d9d9;
+    --primary: #6aa5cc;
+    --secondary: #426780;
+    --tertiary: #a7bdcc;
+    --text-black: #4b4b4b;
+    --surface-color: #f3f3f4;
+    --white-primary: #ffffff;
+
+    /* typography weights */
+    --font-family: "Poppins", sans-serif;
+    --font-wght-1: 700;
+    --font-wght-2: 600;
+    --font-wght-3: 500;
+    --font-wght-4: 400;
+    --font-wght-5: 300;
+
+    /* typography sizes */
+    --font-size-1: 32px;
+    --font-size-2: 24px;
+    --font-size-3: 20px;
+    --font-size-4: 16px;
+    --font-size-5: 14px;
+    --font-capition: 12px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+html {
+    min-width: 600;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: var(--hero-background);
+    font-family: var(--font-family);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: none;
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    min-width: 600;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    min-width: 600;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+    background: var(--white-primary);
+}
+
+.card__header {
+    width: 100%;
+    height: 100%;
+    padding: 36px 25px;
+}
+
+.toggle {
+    padding: 0 0 24px 0;
+    width: 24px;
+    height: 24px;
+}
+
+.toggle i {
+    font-size: 25px;
+    color: #426780;
+}
+
+.user__profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 28px 0 0 0;
+}
+
+.user__profile .profile__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #6aa5cc;
+    width: 109px;
+    height: 109px;
+    border-radius: 50%;
+}
+
+.user__profile .profile__image h3 {
+    font-size: 32px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.user__profile .edit {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #426780;
+    border: 2px solid #ffffff;
+    position: absolute;
+    left: 225px;
+    top: 165px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user__profile .edit i {
+    color: #ffffff;
+}
+
+.profile__name {
+    padding: 14px 0 32px 0;
+}
+
+.profile__name h4 {
+    font-size: 24px;
+    color: var(--text-black);
+    font-weight: 600;
+}
+
+.profile__info {
+    width: 100%;
+    height: auto;
+    background: #f6f6f6;
+    padding: 10px 16px;
+    border-radius: 8px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0 12px 0;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.profile__body {
+    display: flex;
+    align-items: center;
+}
+
+.profile__body i {
+    color: #426780;
+    font-size: 17px;
+}
+
+.profile__body h4 {
+    font-size: 19px;
+    color: var(--text-black);
+    font-weight: 500;
+    padding: 0 0 0 12px;
+}
+
+.schedule {
+    border: none;
+}
+
+.interests {
+    margin: 24px 0 24px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 56px;
+    background: #f6f6f6;
+    border-radius: 8px;
+    padding: 12px 16px;
+}
+
+.password {
+    margin: 24px 0 24px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 56px;
+    background: #f6f6f6;
+    border-radius: 8px;
+    padding: 12px 16px;
+}
+
+.fa-solid {
+    color: var(--text-black);
+}
