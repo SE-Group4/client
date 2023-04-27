@@ -81,4 +81,63 @@
 			</div>
 		</div>
 	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- === favicon === -->
+    <link rel="icon" type="image/png" href="../images/logo.png" />
+    <!-- === sign in css styles === -->
+    <link rel="stylesheet" href="../styles/signin.css" />
+    <!-- === fontawesome === -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <title>Sign In | StudyBuddy</title>
+  </head>
+  <body>
+    <div class="container">
+      <form action="." class="form form--hidden" id="signin">
+        <div class="form__logo">
+          <a href="/">
+            <img src="../images/logo.png" alt="" class="form__logo-image" />
+          </a>
+        </div>
+        <h3 class="form__title">Welcome Back!</h3>
+        <p class="form__subtitle">
+          We're glad you are back. Sign back into your account to continue
+        </p>
+        <div class="form__input-group">
+          <p class="form__input-group-label">Username</p>
+          <input
+            type="text"
+            id="username"
+            class="form__input"
+            autofocus
+            required
+          />
+        </div>
+        <div class="form__input-group">
+          <p class="form__input-group-label">Password</p>
+          <input
+            type="password"
+            id="password"
+            class="form__input"
+            autofocus
+            required
+          />
+        </div>
+        <p class="form__text form__text--align-right">
+          <a href="#" class="form__link">Forgot Password</a>
+        </p>
+        <button type="submit" class="form__button">Sign in</button>
+        <p class="form__text">
+          Don't have an account?
+          <a href="./signup.html" class="form__link" id="singup">Sign Up</a>
+        </p>
+      </form>
+    </div>
+    <script src="../scripts/js/signin.js"></script>
+  </body>
 </html>
