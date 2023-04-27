@@ -1,7 +1,7 @@
 const form = document.querySelector('form');
-const eye = document.querySelectorAll('.fa-eye')
-const password = document.querySelector('#password')
-const confirmPassword = document.querySelector('#confirm__password');
+// const eye = document.querySelectorAll('.fa-eye')
+// const password = document.querySelector('#password')
+// const confirmPassword = document.querySelector('#confirm__password');
 
 // confirm password input
 const confirmPasswordInput = (firstValue, lastValue) => {
@@ -13,19 +13,18 @@ const confirmPasswordInput = (firstValue, lastValue) => {
 form.addEventListener('submit', (event) => {
     event.preventDefault();
     const formData = Object.fromEntries(new FormData(event.target).entries());
-    console.log(formData)
-    // confirm password
-    let firstName = form.first__name.toLowerCase;
-    let lastName = form.last__name.toLowerCase;
+    let firstName = formData.first_name;
+    let lastName = formData.last_name;
     let email = formData.email;
     let passwordData = formData.password;
     let confirmData = formData.confirm__password;
+    console.log(formData);
     try {
-        if ((firstName != '' || lastName != '') && (confirmPasswordInput(passwordData, confirmData) && emailValidate(email))) {
+        if ((firstName != '' && lastName != '') && (confirmPasswordInput(passwordData, confirmData) && emailValidate(email))) {
             window.location.href = "/frontend/pages/interests.html"
         }
     } catch (error) {
-        console.log(error)
+        return error;
     }
     form.reset()
     return false

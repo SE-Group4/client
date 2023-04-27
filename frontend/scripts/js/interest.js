@@ -1,10 +1,10 @@
 const back = document.querySelector(".fa-circle-arrow-left");
-const form = document.querySelector(".select__value form");
+const form = document.querySelector("form");
 console.log(form);
+console.log("heloo world");
 
 back.addEventListener("click", (event) => {
     event.preventDefault();
-    console.log("return back to sign up page");
 });
 
 form.addEventListener("submit", (event) => {
