@@ -1,5 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>sign up</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="../scripts/js/signup.js" defer></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    screens: {
+                        "2xl": { max: "1535px" },
+                        xl: { max: "1279px" },
+                        lg: { max: "1023px" },
+                        md: { max: "767px" },
+                        sm: { max: "639px" },
+                    },
+                    extend: {
+                        colors: {
+                            clifford: "#da373d",
+                        },
+                    },
+                },
+            };
+        </script>
+    </head>
+    <body class="mx-auto h-screen w-full flex justify-center">
+        <div class="flex justify-center">
+            <div class="border-[1px] px-[40px] w-full h-full">
+                <img
+                    src="images/studybuddy_logo 1.png"
+                    class="h-[44px] w-[64px] mt-[64px] sm:pb-[10px]"
+                    alt="logo"
+                />
+                <h5
+                    class="font-semibold text-[48px]sm:h-[32px] sm:l-[32px] sm:t-[124px] sm:w-[313px]"
+                >
+                    Create an account
+                </h5>
+                <h4
+                    class="text-[13px] text-[#2A2A2A] h-[42px] font-regular mt-[4px] sm:w-[289px] sm:h-[42px] sm:l-[32px] sm:t-[176px]"
+                >
+                    Join the study buddy family - connecting people through
+                    knowledge
+                </h4>
+                <form>
+                    <div class="flex">
+                        <div class="flex flex-col">
+                            <label for="first_name">First Name</label>
+                            <input
+                                type="text"
+                                class="mr-[10px] bg-[#F2F2F2] sm:h-[40px] sm:w-[144px] sm:h-[40px] sm:l-[32px] sm:t-[295px] sm:rounded-[4px]"
+                                name="first_name"
+                                id="first_name"
+                            />
+                        </div>
+                        <div class="flex flex-col">
+                            <label for="last_name">Last Name</label>
+                            <input
+                                type="text"
+                                class="mr-[10px] bg-[#F2F2F2] sm:-[144px] sm:h-[40px] sm:l-[199px] sm:t-[295px] sm:rounded-[4px]"
+                                name="last_Name"
+                                id="last_Name"
+                            />
+                        </div>
+                    </div>
+                    <div class="flex flex-col sm:pt-[15px] pt-[10px]">
+                        <label for="email">Email</label>
+                        <input
+                            type="text"
+                            class="ml-[5px] bg-[#F2F2F2] rounded-[4px] w-[365px] sm:w-[311px] sm:h-[40px] sm:l-[32px] sm:t-[388px] sm:rounded-[4px]"
+                            name="email"
+                            id="email"
+                        />
+                    </div>
+                    <div
+                        class="flex flex-col mr-[10px] w-[365px] mt-[10px] sm:pt-[15px]"
+                    >
+                        <label for="confirm_password">Password</label>
+                        <input
+                            type="password"
+                            class="ml-[4px] bg-[#F2F2F2] sm:w-[311px] sm:h-[40px] sm:l-[32px] sm:t-[388px] sm:rounded-[4px]"
+                            name="confirm_password"
+                            id="confirm_password"
+                        />
+                    </div>
+                    <div
+                        class="flex flex-col mr-[10px] w-[368px] mt-[10px] sm:pt-[15px]"
+                    >
+                        <label for="password">Confirm Password</label>
+                        <input
+                            type="password"
+                            class="ml-[4px] bg-[#F2F2F2] sm:w-[311px] sm:h-[40px] sm:l-[32px] sm:t-[388px] sm:rounded-[4px]"
+                            name="password"
+                            id="password"
+                        />
+                    </div>
+                    <div class="flex flex-col mr-[10px] sm:pt-[20px] w-[368px]">
+                        <input
+                            type="submit"
+                            class="mt-[20px] bg-[#6AA5CC] sm:w-[311px] sm:h-[40px] sm:l-[32px] sm:t-[553px] sm:rounded-[4px]"
+                            value="Continue"
+                            class="button"
+                        />
+                    </div>
+                    <div class="flex sm:pt-[15px] sm:ml-[20px] pt-[15px]">
+                        <p>
+                            Already have an account?
+                            <a
+                                href="#"
+                                class="text-[#6AA5CC] sm:w-[201px] sm:h-[18px] sm:l-[87px] sm-t-[609px]"
+                                >Sign In</a
+                            >
+                        </p>
+                    </div>
+                </form>
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -43,43 +160,6 @@
               class="mr-[10px] bg-[#F2F2F2] sm:h-[40px] sm:w-[144px] sm:h-[40px] sm:l-[32px] sm:t-[295px] sm:rounded-[4px]" 
               name="First_Name" id="First_Name"/>
             </div>
-            <div class="flex flex-col">
-              <label for="Last_name">Last Name</label>
-              <input type="text"
-               class=" mr-[10px] bg-[#F2F2F2] sm:-[144px] sm:h-[40px] sm:l-[199px] sm:t-[295px] sm:rounded-[4px]" 
-               name="Last_Name" id="Last_Name"/>
-            </div>
-          </div>
-          <div class="flex flex-col sm:pt-[15px] pt-[10px]">
-            <label for="Email">Email</label>
-            <input type="text" class="ml-[5px] bg-[#F2F2F2] rounded-[4px] w-[365px] sm:w-[311px] sm:h-[40px] sm:l-[32px] sm:t-[388px] sm:rounded-[4px]" name="Email" id="Email"/>
-          </div>
-          <div class="flex flex-col mr-[10px] w-[365px] mt-[10px] sm:pt-[15px]">
-            <label for="passw">Password</label>
-            <input type="password"
-             class="ml-[4px] bg-[#F2F2F2] sm:w-[311px] sm:h-[40px] sm:l-[32px] sm:t-[388px] sm:rounded-[4px]" 
-             name="password" id="password"/>  
-          </div>
-          <div class="flex flex-col mr-[10px] w-[368px] mt-[10px] sm:pt-[15px]">
-            <label for="passw">Confirm Password</label>
-            <input type="password" 
-            class="ml-[4px] bg-[#F2F2F2] sm:w-[311px] sm:h-[40px] sm:l-[32px] sm:t-[388px] sm:rounded-[4px]" 
-            name="password" id="password"/>
-          </div>
-          <div class="flex flex-col mr-[10px] sm:pt-[20px] w-[368px]">
-            <input type="submit" 
-            class="mt-[20px] bg-[#6AA5CC] sm:w-[311px] sm:h-[40px] sm:l-[32px] sm:t-[553px] sm:rounded-[4px]"
-             value="Continue" class="button"/>
-          </div>
-          <div class="flex sm:pt-[15px] sm:ml-[20px] pt-[15px]">
-            <p>
-              Already have an account?
-              <a href="#" class="text-[#6AA5CC] sm:w-[201px] sm:h-[18px] sm:l-[87px] sm-t-[609px]" >Sign In</a>
-            </p>
-          </div>
-        </form>
-    </div>
-  </body>
+        </div>
+    </body>
 </html>
-  
-    

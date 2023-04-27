@@ -4,6 +4,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   signInForm.addEventListener("click", (event) => {
     event.preventDefault();
+    const formData = Object.fromEntries(new FormData(event.target).entries());
+})
     signInForm.classList.remove("form--hidden");
     signUpForm.classList.add("form--hidden");
   });

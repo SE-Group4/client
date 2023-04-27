@@ -1,5 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- === favicon === -->
+		<link rel="icon" type="image/png" href="../images/logo.png"/>
+		<!-- === signup css styles === -->
+		<link rel="stylesheet" href="../styles/signin.css" />
+
+		<!-- === fontawesome === -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+		/>
+		<!-- === signin js === -->
+		<script src="../scripts/js/signin.js" defer></script>
+		<title>Sign In | StudyBuddy</title>
+	</head>
+	<body>
+		<div class="hero">
+			<div class="container">
+				<div class="card">
+					<div class="card__header">
+						<!-- === logo === -->
+						<div class="logo">
+							<a href="/">
+								<img
+									src="../images/logo.png"
+									alt=""
+									class="logo"
+								/>
+							</a>
+						</div>
+						<!-- === end logo === -->
+
+						<!-- === description === -->
+						<div class="hero__description">
+							<div class="title">
+								<h3>Welcome Back</h3>
+							</div>
+							<div class="description">
+								<p class="description">
+									Join the study buddy family - connecting
+									people through knowledge
+								</p>
+							</div>
+						</div>
+						<!-- === end description === -->
+
+						<!-- === form inputs === -->
+						<form action="." method="post">
+							<div class="user__profile">
+								<div class="user__email">
+									<p>Email</p>
+									<input type="email" name="email" id="email" required/>
+								</div>
+								<div class="password">
+									<p>Password</p>
+									<input
+										type="password"
+										name="password"
+										id="password"
+									required/>
+								</div>
+								<div class="continue">
+									<input type="submit" value="Continue" id="submit" />
+								</div>
+								<div class="signin__redirect">
+									<p>
+										Dont't have an account yet?
+										<a href="."><span>Sign up</span></a>
+									</p>
+								</div>
+							</div>
+						</form>
+						<!-- === end of form === -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
