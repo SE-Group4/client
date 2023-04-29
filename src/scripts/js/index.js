@@ -23,7 +23,6 @@ const sendHttpRequest = (method, url, data) => {
 	})
 }
 
-// npm install --save axios
 const getRooms = async (url) => {
 	try {
 		const response = await axios.get(url);
