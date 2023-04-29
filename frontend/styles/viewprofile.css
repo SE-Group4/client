@@ -1,0 +1,77 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+.image {
+    /* Ellipse 39 */
+
+
+    position: absolute;
+    width: 105px;
+    height: 105px;
+    margin: 56px 135px 705px 135px;
+}
+
+.chatrooms {
+    position: absolute;
+    width: 266px;
+    height: 30px;
+    left: 32px;
+    top: 535px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height */
+
+
+    color: #2A2A2A;
+}
+
+.rectangle {
+    /* Rectangle 33 */
+
+
+    position: absolute;
+    width: 311px;
+    height: 170px;
+    left: 32px;
+    top: 581px;
+
+    background: #F6F6F6;
+    border-radius: 8px;
+}
+
+.rectangle-2 {
+    position: absolute;
+    width: 311px;
+    height: 56px;
+    left: 32px;
+    top: 767px;
+
+    background: #F6F6F6;
+    border-radius: 8px;
+}
+
+h1 {
+    white-space: nowrap;
+    
+
+}
+
+.button {
+    position: absolute;
+    width: 91px;
+    height: 58px;
+    left: 35px;
+    top: 223px;
+
+    background: #F6F6F6;
+    border-radius: 8px;
+}
+
+.image{
+    display: block;
+}
