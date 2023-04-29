@@ -1,0 +1,83 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0%;
+    padding:0%;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body{margin: 0 32px;}
+.edit {
+    background: #6AA5CC;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:120px;
+    left: 130px;
+   
+    border: 2px solid white;
+
+}
+.icon {
+    position: relative;
+    left: 102px;
+    margin-top: 80px;
+
+}
+
+h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 16px;
+    text-align: center;
+}
+
+.options_main {
+    display: flex;
+    flex-direction: column;
+  margin-top: 32px;
+  background: #F6F6F6;
+  width: 311px;
+  border-radius: 8px;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    margin:0px 16px;
+    justify-content: space-between;
+    text-decoration: none;
+    padding: 16px 23px;
+    color:#2A2A2A;
+    border-bottom: 1px solid #E2E2E2;
+} 
+.option>div{
+    display: flex;
+    align-items: center;
+}
+.option>div>p{
+    margin-left: 15px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+.line{
+    border:none;
+}
+
+.button {
+    margin-top: 36px;
+    left: 32px;
+    height: 24px;
+    width: 24px;
+
+}

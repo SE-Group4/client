@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-style: normal;
+    font-weight: 60;
+    font-size: 4px;
+    line-height: 48px;
+}
+
+body {
+    margin: 0 32px;
+    min-width: 600;
+}
+
+.icon {
+    position: relative;
+    width: 112px;
+    height: 112px;
+    left: 126px;
+    margin-bottom: 48px;
+    margin-top: 124px;
+}
+
+.Forgot {
+    width: 42px;
+    height: 288px;
+    text-align: center;
+}
+
+.P1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+
+}
+
+button {
+    background-color: #6AA5CC;
+    width: 311px;
+    height: 40px;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    display: block;
+    margin-top: 32px;
+}
+
+label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    display: block;
+    margin-top: 24px;
+}
+
+input {
+    width: 311px;
+    height: 40px;
+}
+
+.action {
+    margin-bottom: 24px;
+}

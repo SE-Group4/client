@@ -1,0 +1,23 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.box {
+    width: 311px;
+    height: 232px;
+    left: 32px;
+    top: 146px;
+
+    background: #F6F6F6;
+    border-radius: 8px;
+}
+
+.circle{
+        width: 64px;
+        height: 64px;
+        left: 76px;
+        top: 264px;
+        border-radius: 50%;
+    
+        background: #FFFFFF;
+}

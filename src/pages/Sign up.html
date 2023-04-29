@@ -116,6 +116,49 @@
                         </p>
                     </div>
                 </form>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sign up</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            "2xl": { max: "1535px" },
+            "xl": { max: "1279px" },
+            "lg": { max: "1023px" },
+            "md": { max: "767px" },
+            "sm": { max: "639px" },
+          },
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="mx-auto h-screen w-full flex justify-center">
+    <div class="flex justify-center">
+      <div class="border-[1px] px-[40px] w-full h-full">
+        <img src="../images/studybuddy_logo 1.png" 
+        class="h-[44px] w-[64px] mt-[64px] sm:pb-[10px]"
+        alt="logo"/>
+        <h5 class="font-semibold text-[48px]sm:h-[32px] sm:l-[32px] sm:t-[124px] sm:w-[313px]">Create an account</h5>
+        <h4 class="text-[13px] text-[#2A2A2A] h-[42px] font-regular mt-[4px] sm:w-[289px] sm:h-[42px] sm:l-[32px] sm:t-[176px]">
+          Join the study buddy family - connecting
+          people through knowledge</h4>
+        <form>
+          <div class="flex">
+            <div class="flex flex-col">
+              <label for="First_Name">First Name</label>
+              <input type="text" 
+              class="mr-[10px] bg-[#F2F2F2] sm:h-[40px] sm:w-[144px] sm:h-[40px] sm:l-[32px] sm:t-[295px] sm:rounded-[4px]" 
+              name="First_Name" id="First_Name"/>
             </div>
         </div>
     </body>
