@@ -32,4 +32,7 @@ form.addEventListener('submit', (event) => {
     event.preventDefault();
     const formData = Object.fromEntries(new FormData(event.target).entries());
     signin();
+    document.querySelector("fa-arrow-left").addEventListener("click", function() {
+        window.location.href = "client\src\pages\index.html";
+      });
 })

@@ -30,3 +30,4 @@ composeMessage.addEventListener("submit", (event) => {
     composeMessage.reset();
     return false;
 });
+
