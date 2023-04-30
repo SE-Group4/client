@@ -11,6 +11,14 @@ const room = document.querySelector(".user__interests");
 // show home/profile menu
 toggleMenu.addEventListener("click", (event) => {
     menu.classList.toggle("menu__user__show");
+
+    const rooms = document.querySelector(".chat__rooms");
+    const profile = document.querySelector(".profile");
+    const message = document.querySelector(".messages");
+
+    profile.addEventListener("click", () => {
+        window.location.href = "/src/pages/user-profile.html";
+    });
 });
 
 const sendHttpRequest = (method, url, data) => {
@@ -50,15 +58,17 @@ inputSearch.addEventListener("submit", (event) => {
 });
 
 // join a room and show if user has joined a room
+let promptParagraph;
 joined.forEach((join) => {
     join.addEventListener("click", (event) => {
         event.preventDefault();
         event.target.parentElement.style.display = "none";
-        let joinedParagraph;
+
         for (let paragraph in joinedShow) {
-            let promptParagraph = event.currentTarget.nextSibling.nextSibling;
+            promptParagraph = event.currentTarget.nextSibling.nextSibling;
             if (promptParagraph == joinedShow[paragraph]) {
                 promptParagraph.style.visibility = "visible";
+                console.log(promptParagraph);
                 let interestData = event.currentTarget;
             }
             joinedParagraph = event.currentTarget;
@@ -68,5 +78,10 @@ joined.forEach((join) => {
 
 // open chat room
 room.addEventListener("click", () => {
-    window.location.href = "open-chat.html";
+    console.log(promptParagraph);
+    if (promptParagraph == undefined) {
+        console.log("you must join a room before you can open chat");
+    } else {
+        window.location.href = "open-chat.html";
+    }
 });
