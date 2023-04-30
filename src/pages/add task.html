@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Task</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="task-container">
+        <div class="closelink">
+            <a href="#">
+                <img src="../images/close icon.png" class="closeicon">
+            </a>
+        </div>
+        <div class="innertask">
+            <div class="popup-header">
+                <h1>Add Task</h1>
+            </div>
+            <div class="task-form">
+                <form>
+                    <label>Task Name</label><br>
+                    <input type="text" class="regularinput"><br>
+    
+                    <div class="start-stop">
+                        <div>
+                            <label id="start">Start Time</label><br>
+                            <input type="time" class="timeinput">
+                        </div>
+                        <div>
+                            <label id="stop">Stop Time</label><br>
+                            <input type="time" class="timeinput" id="timeinput2">
+                        </div>
+                    </div>
+        
+                    <label id="date">Date</label><br>
+                    <input type="date" class="regularinput" id="dateinput"><br>
+        
+                    <label id="location">Location</label><br>
+                    <input type="text" class="regularinput" id="locationinput"><br>
+        
+                    <button type="submit" class="normalbutton" id="addtask">Add</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

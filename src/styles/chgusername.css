@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.button {
+    position: absolute;
+    width: 311px;
+    height: 40px;
+    left: 32px;
+    top: 678px;
+    color: white;
+    border: none;
+
+    background: #6AA5CC;
+}
+
+.change-username {
+    /* Change Username */
+
+
+    position: absolute;
+    width: 230px;
+    height: 36px;
+    left: 32px;
+    top: 86px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height */
+
+
+    color: #2A2A2A;
+}
+
+.username {
+    /* Username */
+
+
+    position: absolute;
+    width: 73px;
+    height: 21px;
+    left: 32px;
+    top: 154px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+
+
+    color: #2A2A2A;
+}
+
+.input {
+    /* Rectangle 4 */
+
+
+    position: absolute;
+    width: 311px;
+    height: 40px;
+    left: 32px;
+    top: 183px;
+    background: #F6F6F6;
+    border-radius: 4px;
+    border: none;
+}
+
+.paragraph {
+    /* The username you choose is how people will be able to identify you. Other users find you by using this username and contact you without needing your email */
+
+
+    position: absolute;
+    width: 311px;
+    height: 72px;
+    left: 32px;
+    top: 231px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+
+    color: #2A2A2A;
+
+    opacity: 0.5;
+}
+
+.material-symbols-outlined {
+    position: absolute;
+    margin-left: 38px;
+    margin-top: 36px;
+    margin-right: 325px;
+    margin-bottom: 734px;
+}
