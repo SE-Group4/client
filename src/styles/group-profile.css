@@ -111,6 +111,7 @@ body {
     color: #426780;
     font-size: 17px;
     margin: 10px 0 25px 0;
+    cursor: pointer;
 }
 
 .chat__actions i {
@@ -159,6 +160,70 @@ body {
 .fa-arrow-right-from-bracket {
     font-weight: bold;
     font-size: 18px;
+}
+
+.leave__room {
+    display: none;
+    position: absolute;
+    bottom: 320px;
+    left: 75px;
+}
+
+.card__leave {
+    display: flex;
+    background: #ffffff;
+    flex-direction: column;
+    align-items: center;
+    width: 294px;
+    height: auto;
+    padding: 6px;
+    border-radius: 8px;
+}
+
+.leave__desc {
+    text-align: center;
+    color: var(--text-black);
+}
+
+.leave__desc h2 {
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.leave__desc p {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 6px 0;
+}
+
+.leave__chat {
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 225px;
+    height: 42px;
+    font-weight: 500;
+    border-radius: 4px;
+    color: var(--text-black);
+    background: #f6f6f6;
+    margin-bottom: 9px;
+    cursor: pointer;
+}
+
+.cancel {
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 225px;
+    font-weight: 500;
+    height: 42px;
+    background: #6aa5cc;
+    color: #ffffff;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    cursor: pointer;
 }
 
 .description {
