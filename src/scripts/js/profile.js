@@ -18,3 +18,11 @@ console.log(files);
 files.addEventListener("click", () => {
     window.location.href = "/src/pages/group-filesgit .html";
 });
+
+document.querySelector(".leave").addEventListener("click", () => {
+    document.querySelector(".leave__room").style.display = "flex";
+});
+
+document.querySelector(".cancel").addEventListener("click", () => {
+    document.querySelector(".leave__room").style.display = "none";
+});
