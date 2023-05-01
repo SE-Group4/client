@@ -1,4 +1,4 @@
-# StudyBbuddy
+# StudyBuddy
 
 StudyBbuddy is a web application for students to collaborate and study together. It offers several features, including group chat, private chat, creating groups, creating schedules, and tasks.
 
