@@ -108,6 +108,7 @@ body {
 
 .user__bar .user__info .chatname {
     padding: 0 0 0 9px;
+    cursor: pointer;
 }
 
 .conversation {

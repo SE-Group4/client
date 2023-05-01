@@ -16,5 +16,5 @@ links.addEventListener("click", () => {
 const files = document.querySelector(".files");
 console.log(files);
 files.addEventListener("click", () => {
-    window.location.href = "/src/pages/group-files.html";
+    window.location.href = "/src/pages/group-filesgit .html";
 });
