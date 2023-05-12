@@ -21,25 +21,17 @@ toggleMenu.addEventListener("click", (event) => {
     });
 });
 
-const sendHttpRequest = (method, url, data) => {
-    return fetch(url, {
-        method: method,
-        body: JSON.stringify(data),
-        headers: data ? { "Content-Type": "application/json" } : {},
-    }).then((response) => {
-        return response.json();
-    });
-};
+window.addEventListener('load', () => {
+    const getRooms = async (url) => {
+        try {
+            const response = await axios.get(url);
+        } catch (error) {
+            return error;
+        }
+    };
+    getRooms("http://127.0.0.1:8000/api/v1/room/rooms");
+})
 
-const getRooms = async (url) => {
-    try {
-        const response = await axios.get(url);
-    } catch (error) {
-        return error;
-    }
-};
-
-getRooms("http://127.0.0.1:8000/api/v1/room/rooms");
 
 // search for study rooms
 inputSearch.addEventListener("submit", (event) => {
