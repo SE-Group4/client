@@ -14,6 +14,9 @@ StudyBbuddy is a web application for students to collaborate and study together.
 - CSS
 - JavaScript
 
+# figma design ['mobile', 'desktop']
+https://www.figma.com/file/GKnupqZXrHTgXZyXM2HOF6/Study-Buddy-Mobile-View?node-id=562-244&t=oFb3ehmPG5TBq5L1-0
+
 ## Getting Started
 ### Installation
 1. Clone the repository.
