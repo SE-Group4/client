@@ -34,9 +34,8 @@ const sendHttpRequest = (method, url, data) => {
 const getRooms = async (url) => {
     try {
         const response = await axios.get(url);
-        console.log(response);
     } catch (error) {
-        console.log(error);
+        return error;
     }
 };
 
@@ -78,9 +77,8 @@ joined.forEach((join) => {
 
 // open chat room
 room.addEventListener("click", () => {
-    console.log(promptParagraph);
     if (promptParagraph == undefined) {
-        console.log("you must join a room before you can open chat");
+        return 'you have to join a room before you can view chats and send messages'
     } else {
         window.location.href = "open-chat.html";
     }
