@@ -173,7 +173,7 @@ body {
     height: 100%;
     margin: 0 28px 0 0;
     background: #f2f2f2;
-    box-shadow: 0px 2px 8px rgba(42, 42, 42, 0.3);
+    box-shadow: 0px 4px 8px rgba(42, 42, 42, 0.5);
     border-radius: 8px;
 }
 
@@ -321,11 +321,11 @@ body {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border: 2px solid #f6f6f6;
+    /* border: 2px solid #f6f6f6; */
     cursor: pointer;
     position: relative;
     right: 29px;
-    bottom: 5px;
+    bottom: 2px;
 }
 
 .card .card__header .cards .card__item .show__all .profile__images p {
@@ -384,6 +384,7 @@ body {
 /* === user profile menu === */
 .menu__user {
     visibility: hidden;
+    text-decoration: none;
 }
 
 .menu__user__show {
@@ -402,6 +403,10 @@ body {
     padding: 12px;
     color: #426780;
     cursor: pointer;
+}
+
+.menu__user a {
+    text-decoration: none;
 }
 
 .menu__user .menu__container .menus i {
