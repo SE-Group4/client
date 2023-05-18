@@ -383,11 +383,14 @@ body {
 
 /* === user profile menu === */
 .menu__user {
-    visibility: hidden;
+    display: none;
+    /* visibility: hidden; */
     text-decoration: none;
 }
 
 .menu__user__show {
+    display: flex;
+    flex-direction: column;
     visibility: visible;
 }
 
@@ -407,6 +410,10 @@ body {
 
 .menu__user a {
     text-decoration: none;
+}
+
+.menu__user a .chat__rooms p {
+    color: red;
 }
 
 .menu__user .menu__container .menus i {
